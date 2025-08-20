@@ -2,6 +2,8 @@ name: Build Docker Image
 on:
   push:
     branches: [ "main" ]
+  workflow_run:
+    
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
